@@ -4,7 +4,7 @@
 # O que isso faz?
 Envie o famoso "Oloquinho meu" para seus amigos via chamada telefonica.
 
-É necessário criar uma conta no [TotalVoice](https://totalvoice.com.br), ele te fornecem R$ 3,00 de créditos testar o serviço. Cada envio de "oloquinhos", custa cerca de R$ 0,35. Use com sabedoria.
+É necessário criar uma conta no [TotalVoice](https://totalvoice.com.br), ele te fornecem R$ 3,00 de créditos para testar o serviço. Cada envio de "oloquinhos", custa cerca de R$ 0,35. Use com sabedoria.
 
 Para se cadastrar é necessário um e-mail e um celular válido. O Celular que você cadastra na sua conta, será sua "bina", portanto você deverá usar esse número no parametro `--de` (mais informações abaixo). 
 
@@ -19,7 +19,7 @@ Na tela inicial após logado no TotalVoice você pode obter seu *Token*
 `sudo npm install`
 
 # E para executar?
-* `node index.js --de {telefone} --para {telefone} --token {tokenTotalVoice}`
+* `node index.js --de {telefoneComDDD} --para {telefoneComDDD} --token {tokenTotalVoice}`
 
 ou simplesmente
 
@@ -28,8 +28,8 @@ E informar os dados conforme solicitados.
 
 | Parâmetro  |  Obrigatório  | Descrição |
 | :------------ |:---------------:| -----:|
-| --de | ✅ | Número de telefone da Bina (cadastrado no site do TotalVoice) |
-| --para | ✅ | Número de telefone da pessoa que receberá |
+| --de | ✅ | Número de telefone com DDD da Bina (cadastrado no site do TotalVoice) |
+| --para | ✅ | Número de telefone com DDD da pessoa que receberá |
 | --token | ✅ | Seu token de acesso do TotalVoice |
 
 # Disclaimer
