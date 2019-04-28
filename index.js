@@ -7,10 +7,10 @@ const OPTIONS = {
 }
 
 const oloquinho = {
-    meu: async (from, to, token) => {
+    meu: async (from='', to='', token='') => {
         try {
-            to = to.replace(/[()\- a-zA-Z]/g, to)
-            from = from.replace(/[()\- a-zA-Z]/g, from)
+            to = to.toString().replace(/[()\- a-zA-Z]/g, '')
+            from = from.toString().replace(/[()\- a-zA-Z]/g, '')
 
             console.log(`ô loquinho meu...`)
             console.log(`De: ${from}\nPara: ${to}\nToken: ${token}`)
