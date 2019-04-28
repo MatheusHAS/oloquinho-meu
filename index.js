@@ -33,7 +33,7 @@ const oloquinho = {
                             },
                         }
                     ],
-                    bina: from
+                    bina: `${from}`
                 })
                 .then((resp) => console.log(`Essa ferinha ai meu, quem sabe faz ao vivo!`))
                 .catch((err) => console.error(`Tá pegando fogo bixo: ${err}`))
